@@ -1,4 +1,3 @@
-
 from typing import List
 
 
@@ -8,7 +7,7 @@ class Solution:
 
         # transpose matrix
         for i in range(rows):
-            for j in range(cols):
+            for j in range(i + 1, cols):
                 mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
         
         # reverse rows
