@@ -25,3 +25,12 @@
 |[Move Zeros](https://leetcode.com/problems/move-zeroes/) | `ad-hoc` | [Python](https://github.com/jefersonf/google-prep-tech-2024/blob/main/day-3/move_zeros.py)|
 |[Rotate Array](https://leetcode.com/problems/rotate-array/) | `ad-hoc` | [Python](https://github.com/jefersonf/google-prep-tech-2024/blob/main/day-3/rotate_array.py)|
 |[Count Pairs Whose Sum is Less Than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | `binary search`, `math` | [Python](https://github.com/jefersonf/google-prep-tech-2024/blob/main/day-3/count_pairs_whose_sum_is_less_than_target.py)|
+
+## Day 4
+
+|Problem|Hint|Solution|
+|-|-|:-:|
+|Are There Duplicates in Array?| `ad-hoc` | [Python](https://github.com/jefersonf/google-prep-tech-2024/blob/main/day-4/duplicate_values_check.py)|
+|Maximum Triplet Product | `math`, `brute-force` | [Python](https://github.com/jefersonf/google-prep-tech-2024/blob/main/day-4/max_array_triplet_product.py)|
+|Rotate Matrix 90 Degrees | `ad-hoc` | [Python](https://github.com/jefersonf/google-prep-tech-2024/blob/main/day-4/rotate_matrix_90_deg.py)|
+|Search Word in Matrix | `graph` | [Python](https://github.com/jefersonf/google-prep-tech-2024/blob/main/day-4/word_in_matrix.py)|
