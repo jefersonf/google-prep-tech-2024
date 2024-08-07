@@ -1,4 +1,4 @@
-# google-prep-tech-2024
+# Google Prep Tech 2024
 
 ## Day 1
 
