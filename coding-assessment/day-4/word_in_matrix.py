@@ -25,6 +25,7 @@ class Solution:
                 dfs(mat, vis, i + dx[k], j + dy[k], word, idx)
 
         vis[i][j] = True
+        
     def solution(mat, word):
         rows, cols = len(mat), len(mat[0])
         for i in range(rows):

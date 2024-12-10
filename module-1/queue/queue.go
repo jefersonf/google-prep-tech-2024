@@ -1,12 +1,7 @@
 package queue
 
-type Person struct {
-	position         int
-	remainingTickets int
-}
-
 type Node struct {
-	value Person
+	value int
 	next  *Node
 }
 
@@ -16,7 +11,7 @@ type Queue struct {
 	size int
 }
 
-func (q *Queue) Enqueue(value Person) {
+func (q *Queue) Enqueue(value int) {
 	newNode := &Node{value: value}
 	if q.size == 0 {
 		q.head = newNode
@@ -28,9 +23,9 @@ func (q *Queue) Enqueue(value Person) {
 	q.size += 1
 }
 
-func (q *Queue) Dequeue() (Person, bool) {
+func (q *Queue) Dequeue() (int, bool) {
 	if q.size == 0 {
-		return Person{}, false
+		return 0, false
 	}
 	value := q.head.value
 	q.head = q.head.next
