@@ -4,20 +4,21 @@ func isBipartite(graph [][]int) bool {
 
 	n := len(graph)
 	colorSet := make([]int, n)
+	UNDEFINED := -1
 	for i := range n {
-		colorSet[i] = -1
+		colorSet[i] = UNDEFINED
 	}
 
 	var solve func(node, color int) bool
 	solve = func(node, color int) bool {
 		colorSet[node] = color
-		for _, neigh := range graph[node] {
-			if colorSet[neigh] == -1 {
-				if !solve(neigh, color^1) {
+		for _, neighbor := range graph[node] {
+			if colorSet[neighbor] == UNDEFINED {
+				if !solve(neighbor, color^1) { 
 					return false
 				}
 			}
-			if colorSet[neigh] == colorSet[node] {
+			if colorSet[neighbor] == colorSet[node] {
 				return false
 			}
 		}
@@ -25,7 +26,7 @@ func isBipartite(graph [][]int) bool {
 	}
 
 	for i := range n {
-		if colorSet[i] == -1 && !solve(i, 0) {
+		if colorSet[i] == UNDEFINED && !solve(i, 0) {
 			return false
 		}
 	}
