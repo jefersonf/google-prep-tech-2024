@@ -1,6 +1,6 @@
 package module4
 
-func isBipartite(graph [][]int) bool {
+func IsBipartite(graph [][]int) bool {
 
 	n := len(graph)
 	colorSet := make([]int, n)
