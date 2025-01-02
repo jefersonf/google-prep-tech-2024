@@ -1,6 +1,6 @@
 package module4
 
-func findCenter(edges [][]int) int {
+func FindCenter(edges [][]int) int {
 	inDeg := make(map[int]int)
 	n := 1
 	for i := range edges {
