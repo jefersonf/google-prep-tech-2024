@@ -1,6 +1,6 @@
 package module4
 
-func findJudge(n int, trust [][]int) int {
+func FindJudge(n int, trust [][]int) int {
 
 	if n == 1 {
 		return 1
@@ -15,11 +15,11 @@ func findJudge(n int, trust [][]int) int {
 		outDeg[a] += 1
 	}
 
-	for person := range n + 1 {
-		if inDeg[person] == n-1 && outDeg[person] == 0 {
-			return person
+	for personID := range n + 1 {
+		if inDeg[personID] == n-1 && outDeg[personID] == 0 {
+			return personID
 		}
 	}
 
-	return -1
+	return -1 // no answer
 }
