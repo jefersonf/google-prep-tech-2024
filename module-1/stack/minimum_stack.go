@@ -26,3 +26,12 @@ func (ms minStack) GetMinimum() (int, error) {
 	}
 	return ms[len(ms)-1].MinimumValueFromBottom, nil
 }
+
+func (ms *minStack) Remove(elem int) {
+	if len(*ms) == 0 {
+		return
+	}
+	if (*ms)[len(*ms)-1].Value == elem {
+		*ms = (*ms)[:len(*ms)-1]
+	}
+}
