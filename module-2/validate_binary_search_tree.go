@@ -1,4 +1,4 @@
-package module3
+package module2
 
 const Inf int64 = (1 << 32)
 

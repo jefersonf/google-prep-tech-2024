@@ -1,4 +1,4 @@
-package module3
+package module2
 
 func isBalanced(root *TreeNode) bool {
 	ok, _ := checkIsBalanced(root)
