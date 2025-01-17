@@ -2,7 +2,8 @@ package module2
 
 func RangeMinimumQueryWithSegmentTree(arr []int, queries [][]int) []int {
 
-	segtree := make([]int, 4*len(arr))
+	n := len(arr)
+	segtree := make([]int, 4*n)
 
 	var build func(id, l, r int)
 	build = func(id, l, r int) {
@@ -28,10 +29,10 @@ func RangeMinimumQueryWithSegmentTree(arr []int, queries [][]int) []int {
 		mid := (l + r) / 2
 		leftMin := query(id*2, l, mid, i, j)
 		rightMin := query(id*2+1, mid+1, r, i, j)
+
 		return min(leftMin, rightMin)
 	}
 
-	n := len(arr)
 	build(1, 0, n-1)
 
 	answers := make([]int, len(queries))

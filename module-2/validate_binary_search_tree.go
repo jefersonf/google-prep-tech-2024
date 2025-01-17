@@ -15,7 +15,10 @@ func check(node *TreeNode) (bool, int64, int64) {
 	isLeftvalid, maxLeft, minLeft := check(node.Left)
 	isRightValid, maxRight, minRight := check(node.Right)
 
-	var maxVal, minVal = max(int64(node.Val), max(maxLeft, maxRight)), min(int64(node.Val), min(minLeft, minRight))
+	var (
+		maxVal = max(int64(node.Val), max(maxLeft, maxRight))
+		minVal = min(int64(node.Val), min(minLeft, minRight))
+	)
 
 	if node.Left != nil && node.Right != nil {
 		return isLeftvalid && isRightValid && (maxLeft < int64(node.Val)) && (int64(node.Val) < minRight), maxVal, minVal

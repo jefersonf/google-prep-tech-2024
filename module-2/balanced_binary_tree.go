@@ -19,10 +19,10 @@ func checkIsBalanced(node *TreeNode) (bool, int) {
 		return false, currHeight
 	}
 
-	d := leftHeight - rightHeight
-	if d < 0 {
-		d *= -1
+	diffHeight := leftHeight - rightHeight
+	if diffHeight < 0 {
+		diffHeight *= -1
 	}
 
-	return d <= 1, currHeight
+	return diffHeight <= 1, currHeight
 }
