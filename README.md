@@ -1,8 +1,17 @@
 # Prep Tech 2024
 
-- [Coding Assessment](https://github.com/jefersonf/google-prep-tech-2024/blob/main/coding-assessment)
-- Course Modules:
-  - [Module 1 - Hash Table, Linked List, Queue, Stack, Recursion, and Sorting](https://github.com/jefersonf/google-prep-tech-2024/blob/main/module-1/)
-  - [Module 2 - Trees, Heap, and Backtracking](https://github.com/jefersonf/google-prep-tech-2024/blob/main/module-2/)
-  - [Module 3 - Dynamic Programming](https://github.com/jefersonf/google-prep-tech-2024/blob/main/module-3/)
-  - [Module 4 - Graph](https://github.com/jefersonf/google-prep-tech-2024/blob/main/module-4/)
+I took part in the [Prep Tech 2024](https://ada.tech/oportunidades/google-prep-tech-2024) program, where I had the opportunity to revisit key computer science concepts, with a particular focus on problem-solving techniques and coding interviews. Below, you'll find artifacts and a history of my journey throughout the course.
+
+Problem set history:
+
+TODO
+
+
+Prep Tech effect! Below are some of my active days practicing problem-solving on LeetCode throughout the program.
+
+![alt text](preptech-leetcode-chart.png)
+
+Check out my [LeetCode profile](https://leetcode.com/u/jefersonf/).
+
+Course completion [certificate](https://ada.tech/certificado?code=0817c8af-05c7-4bc4-b3a8-0429bbc3459f).
+
