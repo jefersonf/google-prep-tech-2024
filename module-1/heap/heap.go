@@ -62,8 +62,8 @@ func (t *HeapTree) heapify(currentIndex int) {
 	if rightChildIndex >= size {
 		if t.Nodes[leftChildIndex] > t.Nodes[currentIndex] {
 			t.swap(leftChildIndex, currentIndex)
-			return
 		}
+		return
 	}
 
 	if t.Nodes[leftChildIndex] > t.Nodes[rightChildIndex] {
