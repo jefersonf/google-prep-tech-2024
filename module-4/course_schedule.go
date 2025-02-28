@@ -1,6 +1,6 @@
 package module4
 
-func CanFinish(numCourses int, prerequisites [][]int) bool {
+func CanFinishAllCourses(numCourses int, prerequisites [][]int) bool {
 	adj := make([][]int, numCourses)
 	indeg := make([]int, numCourses)
 
